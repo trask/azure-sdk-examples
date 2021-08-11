@@ -1,0 +1,10 @@
+{
+  "preview": {
+    "openTelemetryApiSupport": true,
+    "instrumentation": {
+      "azureSdk": {
+        "enabled": true
+      }
+    }
+  }
+}
