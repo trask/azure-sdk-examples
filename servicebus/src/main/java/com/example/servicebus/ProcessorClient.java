@@ -14,7 +14,7 @@ public class ProcessorClient {
     private static final Logger logger = LoggerFactory.getLogger(ProcessorClient.class);
 
     public static void main(String[] args) throws InterruptedException {
-        sendMessage();
+        //sendMessage();
         receiveMessages();
 
         // there's a non-daemon thread "reactor-executor-1"
@@ -35,7 +35,7 @@ public class ProcessorClient {
     }
 
     private static void receiveMessages() throws InterruptedException {
-        // Create an instance of the processor through the ServiceBusClientBuilder
+
         ServiceBusProcessorClient processorClient = new ServiceBusClientBuilder()
                 .connectionString(CONNECTION_STRING)
                 .processor()

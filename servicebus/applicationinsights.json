@@ -1,4 +1,7 @@
 {
+  "role": {
+    "name": "receiver2"
+  },
   "preview": {
     "openTelemetryApiSupport": true,
     "instrumentation": {
@@ -6,5 +9,8 @@
         "enabled": true
       }
     }
+  },
+  "selfDiagnostics": {
+    "level": "debug"
   }
 }
