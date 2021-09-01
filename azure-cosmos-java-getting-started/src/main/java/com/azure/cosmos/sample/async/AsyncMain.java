@@ -101,7 +101,7 @@ public class AsyncMain {
                                             johnsonFamilyItem,
                                             smithFamilyItem);
 
-       // createFamilies(familiesToCreate);
+        createFamilies(familiesToCreate);
 
         familiesToCreate = Flux.just(andersenFamilyItem,
                                 wakefieldFamilyItem,
