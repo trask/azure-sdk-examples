@@ -13,14 +13,15 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class Sender {
 
     private static final String CONNECTION_STRING = System.getenv("EVENT_HUBS_CONNECTION_STRING");
-    private static final String HUB_NAME = "test";
+    private static final String HUB_NAME = "trask5555";
 
     private static final Logger logger = LoggerFactory.getLogger(Sender.class);
 
     public static void main(String[] args) throws InterruptedException {
         sendMessage();
-
-        SECONDS.sleep(10);
+        sendMessage();
+        sendMessage();
+        sendMessage();
 
         // there's a non-daemon thread "reactor-executor-1"
         System.exit(0);

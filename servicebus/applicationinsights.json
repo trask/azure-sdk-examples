@@ -1,16 +1,5 @@
 {
-  "role": {
-    "name": "receiver2"
-  },
-  "preview": {
-    "openTelemetryApiSupport": true,
-    "instrumentation": {
-      "azureSdk": {
-        "enabled": true
-      }
-    }
-  },
   "selfDiagnostics": {
-    "level": "debug"
+    "level": "info"
   }
 }

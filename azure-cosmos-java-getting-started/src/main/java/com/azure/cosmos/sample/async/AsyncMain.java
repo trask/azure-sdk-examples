@@ -101,7 +101,7 @@ public class AsyncMain {
                                             johnsonFamilyItem,
                                             smithFamilyItem);
 
-        createFamilies(familiesToCreate);
+        // createFamilies(familiesToCreate);
 
         familiesToCreate = Flux.just(andersenFamilyItem,
                                 wakefieldFamilyItem,
@@ -208,7 +208,7 @@ public class AsyncMain {
             if (err instanceof CosmosException) {
                 //Client-specific errors
                 CosmosException cerr = (CosmosException) err;
-                logger.error("Read Item failed with CosmosException\n", cerr);
+                // logger.error("Read Item failed with CosmosException\n", cerr);
             } else {
                 //General errors
                 logger.error("Read Item failed\n", err);

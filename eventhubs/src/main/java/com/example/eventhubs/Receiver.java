@@ -8,12 +8,12 @@ import com.azure.messaging.eventhubs.models.EventContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ProcessorClient {
+public class Receiver {
 
     private static final String CONNECTION_STRING = System.getenv("EVENT_HUBS_CONNECTION_STRING");
-    private static final String HUB_NAME = "test";
+    private static final String HUB_NAME = "trask5555";
 
-    private static final Logger logger = LoggerFactory.getLogger(ProcessorClient.class);
+    private static final Logger logger = LoggerFactory.getLogger(Receiver.class);
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -21,8 +21,8 @@ public class ProcessorClient {
                 .consumerGroup(EventHubClientBuilder.DEFAULT_CONSUMER_GROUP_NAME)
                 .connectionString(CONNECTION_STRING, HUB_NAME)
                 .checkpointStore(new SampleCheckpointStore())
-                .processEvent(ProcessorClient::processMessage)
-                .processError(ProcessorClient::processError)
+                .processEvent(Receiver::processMessage)
+                .processError(Receiver::processError)
                 .buildEventProcessorClient();
 
         // This will start the processor. It will start processing events from all partitions.

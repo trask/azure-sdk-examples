@@ -30,7 +30,7 @@
             <!-- used by ReceiverAsyncClientWithManualPropagation example -->
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-api</artifactId>
-            <version>1.4.1</version>
+            <version>1.6.0</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>

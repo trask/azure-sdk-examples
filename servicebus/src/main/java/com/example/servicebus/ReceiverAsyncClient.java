@@ -11,7 +11,7 @@ public class ReceiverAsyncClient {
     private static final String CONNECTION_STRING = System.getenv("SERVICE_BUS_CONNECTION_STRING");
     private static final String QUEUE_NAME = "test";
 
-    private static final Logger logger = LoggerFactory.getLogger(ProcessorClient.class);
+    private static final Logger logger = LoggerFactory.getLogger(Receiver.class);
 
     public static void main(String[] args) throws InterruptedException {
         sendMessage();

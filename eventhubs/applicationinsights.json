@@ -1,9 +1,5 @@
 {
-  "preview": {
-    "instrumentation": {
-      "azureSdk": {
-        "enabled": true
-      }
-    }
+  "selfDiagnostics": {
+    "level": "info"
   }
 }
